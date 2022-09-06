@@ -14,9 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
@@ -27,7 +24,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -69,7 +65,7 @@
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
-            <img src="img/logo.png" alt="">
+            <%= image_pack_tag 'media/images/logo.png' %>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -103,7 +99,7 @@
             </ul>
             
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                <img src="img/logo.png" alt="">
+                <%= image_pack_tag 'media/images/logo.png' %>
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -164,13 +160,13 @@
 	    <div class="col-lg-6 hero-right">
 	    	<div class="owl-carousel owl-theme hero-carousel">
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-1.jpg" alt="">
+                    <%= image_pack_tag 'media/images/hero-1.jpg' %>
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-2.jpg" alt="">
+			    	 <%= image_pack_tag 'media/images/hero-2.jpg' %>
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-3.jpg" alt="">
+			    	 <%= image_pack_tag 'media/images/hero-3.jpg' %>
 			    </div>
 			</div>
 	    </div>
@@ -181,7 +177,7 @@
     <div class="container">
         <div class="section-content">
             <div class="row">
-                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(img/hero-2.jpg);">
+                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(hero-2.jpg);">
                     
                 </div>
                 <div class="col-sm-7 py-5 pl-md-0 pl-4">
@@ -199,19 +195,19 @@
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                     <%= image_pack_tag 'media/images/hero-1.jpg' %>
                                     <h6>Australian Organic Beef</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                     <%= image_pack_tag 'media/images/hero-1.jpg' %>
                                     <h6>Australian Organic Beef</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg"/>
+                                     <%= image_pack_tag 'media/images/hero-1.jpg' %>
                                     <h6>Australian Organic Beef</h6>
                                 </a>
                             </div>
@@ -245,12 +241,16 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="img/steak.jpeg" alt="" class="img-fluid shadow w-100">
+                    <div class="img-fluid shadow w-100">
+                        <%= image_pack_tag 'media/images/steak.jpg' %>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                    <img src="img/salmon-zucchini.jpg" alt="" class="img-fluid shadow w-100">
+                    <div class="img-fluid shadow w-100">
+                        <%= image_pack_tag 'media/images/salmon-zucchini.jpg' %>
+                    </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">02.</h2>
@@ -288,7 +288,9 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="app/assets/images/breakfast-1.jpg" alt="">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -304,7 +306,9 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -320,61 +324,9 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
                             </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 menu-wrap">
-                    <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -396,7 +348,9 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -412,7 +366,9 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -428,7 +384,69 @@
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>Egg Sandwich</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$30</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 menu-wrap">
+                    <div class="heading-menu">
+                        <h3 class="text-center mb-5">Breakfast</h3>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>Egg Sandwich</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$30</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>Egg Sandwich</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$30</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <div class="img-fluid">
+                                <%= image_pack_tag 'media/images/breakfast-1.jpg' %>
+                            </div>
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -448,7 +466,7 @@
     </div>
 </section>
 <!-- End of menu Section -->		<!-- Testimonial Section-->
-<section id="gtco-testimonial" class="overlay bg-fixed section-padding" style="background-image: url(img/testi-bg.jpg);">
+<section id="gtco-testimonial" class="overlay bg-fixed section-padding" style="background-image: url(testi-bg.jpg);">
     <div class="container">
         <div class="section-content">
             <div class="heading-section text-center">
@@ -495,7 +513,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-1.jpg" alt="">
+                        <div class="img-fluid">
+                            <%= image_pack_tag 'media/images/chef-1.jpg' %>
+                        </div>
                         <div class="team-desc">
                             <h4 class="mb-0">Aaron Patel</h4>
                             <p class="mb-1">CEO</p>
@@ -526,7 +546,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-2.jpg" alt="">
+                        <div class="img-fluid">
+                            <%= image_pack_tag 'media/images/chef-2.jpg' %>
+                        </div>
                         <div class="team-desc">
                             <h4 class="mb-0">Daniel Tebas</h4>
                             <p class="mb-1">Chef</p>
@@ -557,7 +579,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-3.jpg" alt="">
+                        <div class="img-fluid">
+                            <%= image_pack_tag 'media/images/chef-3.jpg' %>
+                        </div>
                         <div class="team-desc">
                             <h4 class="mb-0">Jon Snow</h4>
                             <p class="mb-1">Chef</p>
@@ -591,7 +615,7 @@
     </div>
 </section>
 <!-- End of Team Section -->		<!-- Reservation Section -->
-<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(img/reservation-bg.jpg);">
+<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(reservation-bg.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -667,7 +691,6 @@
          <div class="row">
          	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
 	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
 	         		<nav class="nav nav-mastfoot justify-content-start">
 		                <a class="nav-link" href="#">
@@ -723,15 +746,9 @@
 	<!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-	<script src="vendor/bootstrap/popper.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js "></script>
-	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
-	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
 	<!-- Main JS -->
-	<script src="js/app.min.js "></script>
 </body>
 </html>
